@@ -58,8 +58,8 @@ app.get('/register', (req, res) => {
     // 회원 가입 할 땐 {id, password, name} 다 받을거야
     // query 데이터로 id, password, name 보내줄 게
     const id = req.query.id;
-    const password = req.query.id;
-    const name = req.query.id;
+    const password = req.query.password;
+    const name = req.query.name;
 
     // users를 돌면서 user.id와 내가 query로 보낸 id 값이 동일한 유저 정보{}를 찾아줘
     const user = users.find(user => user.id === id);
